@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+body {
+  font-family: "Roboto condensed", sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+main {
+  background: #ccc;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+  background: #fff;
+}
+
+#landing-text {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#landing-text-inner h2 {
+  color: #8888;
+}
+
+#landing-image {
+  background: url(https://source.unsplash.com/_W6PB-JIO5o) no-repeat center
+    center/cover;
+  height: 50vh;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background: #ccc;
+  margin: 2rem 0 0;
+  display: inline-block;
+  transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.caption {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#header {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#header h2 {
+  border-left: dashed 1px #fff;
+  border-right: dashed 1px rgb(138, 122, 122);
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+footer {
+  text-align: center;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+  #landing {
+    display: flex;
+  }
+
+  #landing-text {
+    height: 100vh;
+    flex: 1;
+  }
+
+  #landing-image {
+    height: 100vh;
+    flex: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 2rem;
+  }
+}
