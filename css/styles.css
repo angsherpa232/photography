@@ -19,35 +19,54 @@ h2 {
 img {
   width: 100%;
   display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-main {
-  background: #ccc;
+.card {
   max-width: 900px;
   margin: auto;
   box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
 #landing {
   background: #fff;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#landing-image {
+  background: url(../img/discover1.png) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
 }
 
 #landing-text {
-  display: flex;
-  height: 50vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  text-align: right;
+}
+
+#landing-text-inner {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  animation: landingText 3s forwards;
+}
+
+@keyframes landingText {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 10%;
+  }
 }
 
 #landing-text-inner h2 {
   color: #8888;
-}
-
-#landing-image {
-  background: url(https://source.unsplash.com/_W6PB-JIO5o) no-repeat center
-    center/cover;
-  height: 50vh;
 }
 
 .btn {
@@ -74,6 +93,9 @@ main {
 #header {
   padding: 0.5rem;
   text-align: center;
+  background: #005635;
+  margin-bottom: 1rem;
+  color: #cbc9ca;
 }
 
 #header h2 {
@@ -91,22 +113,6 @@ footer {
 footer h3 {
   font-size: 3rem;
   margin-bottom: 0;
-}
-
-@media (min-width: 500px) {
-  #landing {
-    display: flex;
-  }
-
-  #landing-text {
-    height: 100vh;
-    flex: 1;
-  }
-
-  #landing-image {
-    height: 100vh;
-    flex: 1;
-  }
 }
 
 @media (min-width: 700px) {
